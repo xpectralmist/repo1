@@ -1,9 +1,9 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: helloweb
+  name: teste2
   labels:
-    app: hello
+    app: teste
 spec:
   template:
     metadata:
@@ -12,7 +12,7 @@ spec:
         tier: web
     spec:
       containers:
-      - name: hello-app
-        image: gcr.io/google-samples/hello-app:1.0
+      - name: teste
+        image: eu.gcr.io/xpectraltest/teste:v2
         ports:
         - containerPort: 8080
