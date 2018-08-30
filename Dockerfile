@@ -1,3 +1,3 @@
 FROM python:3
-EXPOSE 5000
+EXPOSE 8080
 CMD python ./first.py
